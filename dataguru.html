@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teacher Database - Alpha Edge</title>
+    <meta name="description" content="Database guru dan tenaga pendidik profesional Alpha Edge. Temukan guru berkualitas untuk kebutuhan pendidikan dan pelatihan teknologi Anda.">
+    <meta name="keywords" content="database guru, teacher database, tenaga pendidik, guru teknologi, pelatihan, Alpha Edge, education">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Leading Innovation, Shaping the Future.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-inline pull-right">
+                            <li><a href="https://www.facebook.com/alphaedge" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.twitter.com/alphaedge" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/alphaedge" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="mailto:alphaedge13@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="tel:+62821-6374-1958"><i class="fa fa-phone"></i> +62821-6374-1958</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="Alpha Edge Logo">
+                </a>
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav main-navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="service.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service.html">Software Development</a></li>
+                                <li><a href="service.html">Cloud & IT Solutions</a></li>
+                                <li><a href="service.html">AI & Data Analytics</a></li>
+                                <li><a href="service.html">UI/UX & Design</a></li>
+                                <li><a href="service.html">Cybersecurity</a></li>
+                                <li><a href="service.html">Training & Support</a></li>
+                                <li><a href="service.html">Digital Marketing Tech</a></li>
+                                <li><a href="service.html">Internet of Things (IoT)</a></li>
+                                <li><a href="service.html">Consulting & Innovation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="page.html">INSIGHTS</a></li>
+                        <li><a href="category.html">CASE STUDIES</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bread_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Teacher Database</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="site-main dataguru-main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="dataguru-hero">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1 class="page-title">Alpha Edge Teacher Database</h1>
+                        <p class="lead">Platform terpercaya untuk mencari tenaga pendidik profesional di bidang teknologi. Temukan guru yang tepat untuk kebutuhan pendidikan dan pelatihan Anda.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search and Filter -->
+            <section class="search-filter">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="search-panel">
+                            <form id="teacherSearchForm" class="form-inline">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="searchKeyword" class="control-label">Kata Kunci</label>
+                                            <input type="text" class="form-control" id="searchKeyword" placeholder="Nama, spesialisasi, atau lokasi...">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="subjectFilter" class="control-label">Mata Pelajaran</label>
+                                            <select class="form-control" id="subjectFilter">
+                                                <option value="">Semua Mata Pelajaran</option>
+                                                <option value="programming">Programming</option>
+                                                <option value="web-development">Web Development</option>
+                                                <option value="data-science">Data Science</option>
+                                                <option value="mobile-development">Mobile Development</option>
+                                                <option value="cybersecurity">Cybersecurity</option>
+                                                <option value="cloud-computing">Cloud Computing</option>
+                                                <option value="ui-ux">UI/UX Design</option>
+                                                <option value="artificial-intelligence">Artificial Intelligence</option>
+                                                <option value="machine-learning">Machine Learning</option>
+                                                <option value="blockchain">Blockchain</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="levelFilter" class="control-label">Level</label>
+                                            <select class="form-control" id="levelFilter">
+                                                <option value="">Semua Level</option>
+                                                <option value="beginner">Beginner</option>
+                                                <option value="intermediate">Intermediate</option>
+                                                <option value="advanced">Advanced</option>
+                                                <option value="expert">Expert</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="locationFilter" class="control-label">Lokasi</label>
+                                            <select class="form-control" id="locationFilter">
+                                                <option value="">Semua Lokasi</option>
+                                                <option value="jakarta">Jakarta</option>
+                                                <option value="bandung">Bandung</option>
+                                                <option value="surabaya">Surabaya</option>
+                                                <option value="yogyakarta">Yogyakarta</option>
+                                                <option value="semarang">Semarang</option>
+                                                <option value="online">Online</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="control-label">&nbsp;</label>
+                                            <div class="search-buttons">
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="fa fa-search"></i> Cari Guru
+                                                </button>
+                                                <button type="reset" class="btn btn-default">
+                                                    <i class="fa fa-refresh"></i> Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Teacher Profiles -->
+            <section class="teacher-profiles">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-header">
+                            <h2>Featured Teachers</h2>
+                            <p>Temukan guru terbaik untuk kebutuhan pembelajaran Anda</p>
+                        </div>
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .btn-filter {
+            background: linear-gradient(135deg, var(--primary-color), #007acc);
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-filter:hover {
+            background: linear-gradient(135deg, #007acc, var(--primary-color));
+            transform: translateY(-2px);
+        }
+
+        .pagination-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .pagination {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .page-item {
+            margin: 0;
+        }
+
+        .page-link {
+            padding: 10px 15px;
+            border: 2px solid #e9ecef;
+            background: white;
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .page-link:hover,
+        .page-item.active .page-link {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+    </div>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Leading Innovation, Shaping the Future.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-inline pull-right">
+                            <li><a href="https://www.facebook.com/alphaedge" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.twitter.com/alphaedge" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/alphaedge" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="mailto:alphaedge13@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="tel:+62821-6374-1958"><i class="fa fa-phone"></i> +62821-6374-1958</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="Alpha Edge">
+                </a>
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav main-navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">SERVICES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service.html">Software Development</a></li>
+                                <li><a href="service.html">Cloud & IT Solutions</a></li>
+                                <li><a href="service.html">AI & Data Analytics</a></li>
+                                <li><a href="service.html">UI/UX & Design</a></li>
+                                <li><a href="service.html">Cybersecurity</a></li>
+                                <li><a href="service.html">Training & Support</a></li>
+                                <li><a href="service.html">Digital Marketing Tech</a></li>
+                                <li><a href="service.html">Internet of Things (IoT)</a></li>
+                                <li><a href="service.html">Consulting & Innovation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="page.html">PAGE</a></li>
+                        <li><a href="category.html">CATEGORY</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="site-main">
+        <div class="data-guru-container">
+            <div class="container">
+                <!-- Page Header -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-header text-center">
+                            <h1><i class="fas fa-chalkboard-teacher"></i> Data Guru & Tenaga Pendidik</h1>
+                            <p class="lead">Platform database guru dan tenaga pendidik profesional di bidang teknologi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search and Filter -->
+                <div class="search-filter">
+                    <h3><i class="fas fa-search"></i> Cari Guru</h3>
+                    <form class="filter-form">
+                        <div class="form-group">
+                            <label for="search-name">Nama Guru</label>
+                            <input type="text" class="form-control" id="search-name" placeholder="Cari berdasarkan nama...">
+                        </div>
+                        <div class="form-group">
+                            <label for="search-expertise">Keahlian</label>
+                            <select class="form-control" id="search-expertise">
+                                <option value="">Semua Keahlian</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="mobile-development">Mobile Development</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="cloud-computing">Cloud Computing</option>
+                                <option value="ui-ux">UI/UX Design</option>
+                                <option value="ai-ml">AI & Machine Learning</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="search-location">Lokasi</label>
+                            <input type="text" class="form-control" id="search-location" placeholder="Kota/Provinsi...">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn-filter">
+                                <i class="fas fa-search"></i> Cari
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Guru Cards -->
+                <div class="row">
+                    <!-- Guru 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="guru-card">
+                            <div class="guru-header">
+                                <div class="guru-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="guru-info">
+                                    <h3>Dr. Ahmad Santoso, M.T.</h3>
+                                    <div class="position">Senior Software Engineer & Lecturer</div>
+                                    <div class="institution">Universitas Teknologi Bandung</div>
+                                </div>
+                            </div>
+
+                            <div class="guru-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">15+</span>
+                                    <span class="stat-label">Tahun Pengalaman</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">200+</span>
+                                    <span class="stat-label">Mahasiswa Dibimbing</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-skills">
+                                <h4><i class="fas fa-code"></i> Keahlian:</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Web Development</span>
+                                    <span class="skill-tag">Database</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-contact">
+                                <a href="#" class="contact-btn">
+                                    <i class="fas fa-envelope"></i> Hubungi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guru 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="guru-card">
+                            <div class="guru-header">
+                                <div class="guru-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="guru-info">
+                                    <h3>Sarah Wijaya, M.Sc.</h3>
+                                    <div class="position">Data Scientist & Researcher</div>
+                                    <div class="institution">Institut Teknologi Sepuluh Nopember</div>
+                                </div>
+                            </div>
+
+                            <div class="guru-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Tahun Pengalaman</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">Publikasi Ilmiah</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-skills">
+                                <h4><i class="fas fa-brain"></i> Keahlian:</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Machine Learning</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">R Programming</span>
+                                    <span class="skill-tag">Statistics</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-contact">
+                                <a href="#" class="contact-btn">
+                                    <i class="fas fa-envelope"></i> Hubungi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guru 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="guru-card">
+                            <div class="guru-header">
+                                <div class="guru-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="guru-info">
+                                    <h3>Budi Setiawan, S.Kom.</h3>
+                                    <div class="position">Cybersecurity Specialist</div>
+                                    <div class="institution">Badan Siber dan Sandi Negara</div>
+                                </div>
+                            </div>
+
+                            <div class="guru-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">8+</span>
+                                    <span class="stat-label">Tahun Pengalaman</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">100+</span>
+                                    <span class="stat-label">Sertifikasi</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-skills">
+                                <h4><i class="fas fa-shield-alt"></i> Keahlian:</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Cybersecurity</span>
+                                    <span class="skill-tag">Network Security</span>
+                                    <span class="skill-tag">Ethical Hacking</span>
+                                    <span class="skill-tag">Penetration Testing</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-contact">
+                                <a href="#" class="contact-btn">
+                                    <i class="fas fa-envelope"></i> Hubungi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guru 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="guru-card">
+                            <div class="guru-header">
+                                <div class="guru-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="guru-info">
+                                    <h3>Maya Indira, M.Des.</h3>
+                                    <div class="position">UI/UX Designer & Lecturer</div>
+                                    <div class="institution">Universitas Multimedia Nusantara</div>
+                                </div>
+                            </div>
+
+                            <div class="guru-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">12+</span>
+                                    <span class="stat-label">Tahun Pengalaman</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">300+</span>
+                                    <span class="stat-label">Design Project</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-skills">
+                                <h4><i class="fas fa-palette"></i> Keahlian:</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">UI/UX Design</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Adobe XD</span>
+                                    <span class="skill-tag">User Research</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-contact">
+                                <a href="#" class="contact-btn">
+                                    <i class="fas fa-envelope"></i> Hubungi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guru 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="guru-card">
+                            <div class="guru-header">
+                                <div class="guru-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="guru-info">
+                                    <h3>Prof. Dr. Hendro Wicaksono</h3>
+                                    <div class="position">Professor of Computer Science</div>
+                                    <div class="institution">Universitas Indonesia</div>
+                                </div>
+                            </div>
+
+                            <div class="guru-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">25+</span>
+                                    <span class="stat-label">Tahun Pengalaman</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">80+</span>
+                                    <span class="stat-label">Publikasi Internasional</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-skills">
+                                <h4><i class="fas fa-graduation-cap"></i> Keahlian:</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Artificial Intelligence</span>
+                                    <span class="skill-tag">Computer Vision</span>
+                                    <span class="skill-tag">Research</span>
+                                    <span class="skill-tag">Academic Writing</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-contact">
+                                <a href="#" class="contact-btn">
+                                    <i class="fas fa-envelope"></i> Hubungi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guru 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="guru-card">
+                            <div class="guru-header">
+                                <div class="guru-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="guru-info">
+                                    <h3>Rina Kartika, S.T., M.T.</h3>
+                                    <div class="position">Cloud Solutions Architect</div>
+                                    <div class="institution">Amazon Web Services</div>
+                                </div>
+                            </div>
+
+                            <div class="guru-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">7+</span>
+                                    <span class="stat-label">Tahun Pengalaman</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">150+</span>
+                                    <span class="stat-label">Deployment Project</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-skills">
+                                <h4><i class="fas fa-cloud"></i> Keahlian:</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Cloud Architecture</span>
+                                    <span class="skill-tag">DevOps</span>
+                                    <span class="skill-tag">Docker</span>
+                                </div>
+                            </div>
+
+                            <div class="guru-contact">
+                                <a href="#" class="contact-btn">
+                                    <i class="fas fa-envelope"></i> Hubungi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-wrapper">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>Alpha Edge</h4>
+                    <p class="text">Perusahaan teknologi yang memberikan solusi terdepan dan inovatif, memberi kesan modern dan profesional.</p>
+                    <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/AlphaEdgeTechnology"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://x.com/AlphaEdgeTech"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/alpha-edge-technology"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>SERVICES</h4>
+                    <ul class="big">
+                        <li><a href="service.html">Software Development</a></li>
+                        <li><a href="service.html">Cloud & IT Solutions</a></li>
+                        <li><a href="service.html">AI & Data Analytics</a></li>
+                        <li><a href="service.html">UI/UX & Design</a></li>
+                        <li><a href="service.html">Cybersecurity</a></li>
+                        <li><a href="service.html">Training & Support</a></li>
+                        <li><a href="service.html">Digital Marketing Tech</a></li>
+                        <li><a href="service.html">Internet of Things (IoT)</a></li>
+                        <li><a href="service.html">Consulting & Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>CONTENT</h4>
+                    <ul class="big">
+                        <li><a href="about.html">Tentang Alpha Edge</a></li>
+                        <li><a href="service.html">Layanan Teknologi</a></li>
+                        <li><a href="product.html">Produk & Solusi</a></li>
+                        <li><a href="category.html">Studi Kasus</a></li>
+                        <li><a href="blog">Blog & Insight</a></li>
+                        <li><a href="careers">Karir</a></li>
+                        <li><a href="contact.html">Hubungi Kami</a></li>
+                        <li><a href="support.html">Bantuan & Dukungan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>Contact</h4>
+                    <p class="text">Jika Terdapat Pertanyaan Silahkan Hubungi Nomor atau Email Dibawah Ini</p>
+                    <p><a href="https://wa.me/6282163741958">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i> +62821-6374-1958</a>
+                    </p>
+                    <p><a href="mailto:alphaedge13@gmail.com">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> alphaedge13@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>&copy; 2025 Frozen king</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // Simple search functionality
+        document.querySelector('.btn-filter').addEventListener('click', function(e) {
+            e.preventDefault();
+            const searchName = document.getElementById('search-name').value.toLowerCase();
+            const searchExpertise = document.getElementById('search-expertise').value;
+            const searchLocation = document.getElementById('search-location').value.toLowerCase();
+
+            const guruCards = document.querySelectorAll('.guru-card');
+
+            guruCards.forEach(card => {
+                const guruName = card.querySelector('h3').textContent.toLowerCase();
+                const guruInfo = card.textContent.toLowerCase();
+
+                let showCard = true;
+
+                if (searchName && !guruName.includes(searchName)) {
+                    showCard = false;
+                }
+
+                if (searchLocation && !guruInfo.includes(searchLocation)) {
+                    showCard = false;
+                }
+
+                if (showCard) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

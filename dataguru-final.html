@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teacher Database - Alpha Edge</title>
+    <meta name="description" content="Database guru dan tenaga pendidik profesional Alpha Edge. Temukan guru berkualitas untuk kebutuhan pendidikan dan pelatihan teknologi Anda.">
+    <meta name="keywords" content="database guru, teacher database, tenaga pendidik, guru teknologi, pelatihan, Alpha Edge, education">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Leading Innovation, Shaping the Future.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-inline pull-right">
+                            <li><a href="https://www.facebook.com/alphaedge" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.twitter.com/alphaedge" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/alphaedge" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="mailto:alphaedge13@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="tel:+62821-6374-1958"><i class="fa fa-phone"></i> +62821-6374-1958</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="Alpha Edge Logo">
+                </a>
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav main-navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="service.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service.html">Software Development</a></li>
+                                <li><a href="service.html">Cloud & IT Solutions</a></li>
+                                <li><a href="service.html">AI & Data Analytics</a></li>
+                                <li><a href="service.html">UI/UX & Design</a></li>
+                                <li><a href="service.html">Cybersecurity</a></li>
+                                <li><a href="service.html">Training & Support</a></li>
+                                <li><a href="service.html">Digital Marketing Tech</a></li>
+                                <li><a href="service.html">Internet of Things (IoT)</a></li>
+                                <li><a href="service.html">Consulting & Innovation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="page.html">INSIGHTS</a></li>
+                        <li><a href="category.html">CASE STUDIES</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bread_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Teacher Database</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="site-main dataguru-main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="dataguru-hero">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1 class="page-title">Alpha Edge Teacher Database</h1>
+                        <p class="lead">Platform terpercaya untuk mencari tenaga pendidik profesional di bidang teknologi. Temukan guru yang tepat untuk kebutuhan pendidikan dan pelatihan Anda.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search and Filter -->
+            <section class="search-filter">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="search-panel">
+                            <form id="teacherSearchForm" class="form-inline">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="searchKeyword" class="control-label">Kata Kunci</label>
+                                            <input type="text" class="form-control" id="searchKeyword" placeholder="Nama, spesialisasi, atau lokasi...">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="subjectFilter" class="control-label">Mata Pelajaran</label>
+                                            <select class="form-control" id="subjectFilter">
+                                                <option value="">Semua Mata Pelajaran</option>
+                                                <option value="programming">Programming</option>
+                                                <option value="web-development">Web Development</option>
+                                                <option value="data-science">Data Science</option>
+                                                <option value="mobile-development">Mobile Development</option>
+                                                <option value="cybersecurity">Cybersecurity</option>
+                                                <option value="cloud-computing">Cloud Computing</option>
+                                                <option value="ui-ux">UI/UX Design</option>
+                                                <option value="artificial-intelligence">Artificial Intelligence</option>
+                                                <option value="machine-learning">Machine Learning</option>
+                                                <option value="blockchain">Blockchain</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="levelFilter" class="control-label">Level</label>
+                                            <select class="form-control" id="levelFilter">
+                                                <option value="">Semua Level</option>
+                                                <option value="beginner">Beginner</option>
+                                                <option value="intermediate">Intermediate</option>
+                                                <option value="advanced">Advanced</option>
+                                                <option value="expert">Expert</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="locationFilter" class="control-label">Lokasi</label>
+                                            <select class="form-control" id="locationFilter">
+                                                <option value="">Semua Lokasi</option>
+                                                <option value="jakarta">Jakarta</option>
+                                                <option value="bandung">Bandung</option>
+                                                <option value="surabaya">Surabaya</option>
+                                                <option value="yogyakarta">Yogyakarta</option>
+                                                <option value="semarang">Semarang</option>
+                                                <option value="online">Online</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="control-label">&nbsp;</label>
+                                            <div class="search-buttons">
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="fa fa-search"></i> Cari Guru
+                                                </button>
+                                                <button type="reset" class="btn btn-default">
+                                                    <i class="fa fa-refresh"></i> Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Teacher Profiles -->
+            <section class="teacher-profiles">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-header">
+                            <h2>Featured Teachers</h2>
+                            <p>Temukan guru terbaik untuk kebutuhan pembelajaran Anda</p>
+                        </div>
+
+                        <div class="row" id="teacherGrid">
+                            <!-- Teacher 1 -->
+                            <div class="col-md-4 col-sm-6 teacher-card" data-subject="programming" data-level="expert" data-location="jakarta">
+                                <div class="teacher-profile">
+                                    <div class="teacher-avatar">
+                                        <img src="img/h2.jpg" alt="Teacher 1" class="img-responsive">
+                                        <div class="teacher-status online">
+                                            <i class="fa fa-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-info">
+                                        <h3>Dr. Budi Santoso</h3>
+                                        <p class="teacher-title">Senior Software Engineer & Instructor</p>
+                                        <p class="teacher-specialty">Programming, Web Development, AI</p>
+                                        <div class="teacher-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <span class="rating-text">5.0 (120 reviews)</span>
+                                        </div>
+                                        <p class="teacher-location">
+                                            <i class="fa fa-map-marker"></i> Jakarta
+                                        </p>
+                                        <p class="teacher-experience">
+                                            <i class="fa fa-briefcase"></i> 15+ years experience
+                                        </p>
+                                        <div class="teacher-skills">
+                                            <span class="skill-tag">Python</span>
+                                            <span class="skill-tag">JavaScript</span>
+                                            <span class="skill-tag">React</span>
+                                            <span class="skill-tag">Machine Learning</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-actions">
+                                        <button class="btn btn-primary btn-sm" data-teacher="budi-santoso">
+                                            <i class="fa fa-eye"></i> View Profile
+                                        </button>
+                                        <button class="btn btn-success btn-sm" data-teacher="budi-santoso">
+                                            <i class="fa fa-phone"></i> Contact
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Teacher 2 -->
+                            <div class="col-md-4 col-sm-6 teacher-card" data-subject="ui-ux" data-level="advanced" data-location="bandung">
+                                <div class="teacher-profile">
+                                    <div class="teacher-avatar">
+                                        <img src="img/h3.jpeg" alt="Teacher 2" class="img-responsive">
+                                        <div class="teacher-status online">
+                                            <i class="fa fa-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-info">
+                                        <h3>Sarah Wijaya</h3>
+                                        <p class="teacher-title">UI/UX Designer & Frontend Developer</p>
+                                        <p class="teacher-specialty">UI/UX Design, Frontend Development</p>
+                                        <div class="teacher-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                            </div>
+                                            <span class="rating-text">4.8 (85 reviews)</span>
+                                        </div>
+                                        <p class="teacher-location">
+                                            <i class="fa fa-map-marker"></i> Bandung
+                                        </p>
+                                        <p class="teacher-experience">
+                                            <i class="fa fa-briefcase"></i> 8+ years experience
+                                        </p>
+                                        <div class="teacher-skills">
+                                            <span class="skill-tag">Figma</span>
+                                            <span class="skill-tag">Adobe XD</span>
+                                            <span class="skill-tag">React</span>
+                                            <span class="skill-tag">CSS</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-actions">
+                                        <button class="btn btn-primary btn-sm" data-teacher="sarah-wijaya">
+                                            <i class="fa fa-eye"></i> View Profile
+                                        </button>
+                                        <button class="btn btn-success btn-sm" data-teacher="sarah-wijaya">
+                                            <i class="fa fa-phone"></i> Contact
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Teacher 3 -->
+                            <div class="col-md-4 col-sm-6 teacher-card" data-subject="data-science" data-level="advanced" data-location="surabaya">
+                                <div class="teacher-profile">
+                                    <div class="teacher-avatar">
+                                        <img src="img/h4.jpeg" alt="Teacher 3" class="img-responsive">
+                                        <div class="teacher-status away">
+                                            <i class="fa fa-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-info">
+                                        <h3>Ahmad Rahman</h3>
+                                        <p class="teacher-title">Data Scientist & Analytics Expert</p>
+                                        <p class="teacher-specialty">Data Science, Machine Learning, Analytics</p>
+                                        <div class="teacher-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <span class="rating-text">4.9 (95 reviews)</span>
+                                        </div>
+                                        <p class="teacher-location">
+                                            <i class="fa fa-map-marker"></i> Surabaya
+                                        </p>
+                                        <p class="teacher-experience">
+                                            <i class="fa fa-briefcase"></i> 10+ years experience
+                                        </p>
+                                        <div class="teacher-skills">
+                                            <span class="skill-tag">Python</span>
+                                            <span class="skill-tag">R</span>
+                                            <span class="skill-tag">SQL</span>
+                                            <span class="skill-tag">Tableau</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-actions">
+                                        <button class="btn btn-primary btn-sm" data-teacher="ahmad-rahman">
+                                            <i class="fa fa-eye"></i> View Profile
+                                        </button>
+                                        <button class="btn btn-success btn-sm" data-teacher="ahmad-rahman">
+                                            <i class="fa fa-phone"></i> Contact
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Teacher 4 -->
+                            <div class="col-md-4 col-sm-6 teacher-card" data-subject="cybersecurity" data-level="expert" data-location="online">
+                                <div class="teacher-profile">
+                                    <div class="teacher-avatar">
+                                        <img src="img/h1.jpeg" alt="Teacher 4" class="img-responsive">
+                                        <div class="teacher-status online">
+                                            <i class="fa fa-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-info">
+                                        <h3>Lisa Chen</h3>
+                                        <p class="teacher-title">Cybersecurity Specialist & Ethical Hacker</p>
+                                        <p class="teacher-specialty">Cybersecurity, Ethical Hacking, Network Security</p>
+                                        <div class="teacher-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <span class="rating-text">5.0 (78 reviews)</span>
+                                        </div>
+                                        <p class="teacher-location">
+                                            <i class="fa fa-map-marker"></i> Online
+                                        </p>
+                                        <p class="teacher-experience">
+                                            <i class="fa fa-briefcase"></i> 12+ years experience
+                                        </p>
+                                        <div class="teacher-skills">
+                                            <span class="skill-tag">CEH</span>
+                                            <span class="skill-tag">CISSP</span>
+                                            <span class="skill-tag">Penetration Testing</span>
+                                            <span class="skill-tag">Network Security</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-actions">
+                                        <button class="btn btn-primary btn-sm" data-teacher="lisa-chen">
+                                            <i class="fa fa-eye"></i> View Profile
+                                        </button>
+                                        <button class="btn btn-success btn-sm" data-teacher="lisa-chen">
+                                            <i class="fa fa-phone"></i> Contact
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Teacher 5 -->
+                            <div class="col-md-4 col-sm-6 teacher-card" data-subject="mobile-development" data-level="intermediate" data-location="yogyakarta">
+                                <div class="teacher-profile">
+                                    <div class="teacher-avatar">
+                                        <img src="img/h2.jpg" alt="Teacher 5" class="img-responsive">
+                                        <div class="teacher-status online">
+                                            <i class="fa fa-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-info">
+                                        <h3>Rizki Pratama</h3>
+                                        <p class="teacher-title">Mobile App Developer & Flutter Expert</p>
+                                        <p class="teacher-specialty">Mobile Development, Flutter, React Native</p>
+                                        <div class="teacher-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                            </div>
+                                            <span class="rating-text">4.7 (65 reviews)</span>
+                                        </div>
+                                        <p class="teacher-location">
+                                            <i class="fa fa-map-marker"></i> Yogyakarta
+                                        </p>
+                                        <p class="teacher-experience">
+                                            <i class="fa fa-briefcase"></i> 6+ years experience
+                                        </p>
+                                        <div class="teacher-skills">
+                                            <span class="skill-tag">Flutter</span>
+                                            <span class="skill-tag">React Native</span>
+                                            <span class="skill-tag">iOS</span>
+                                            <span class="skill-tag">Android</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-actions">
+                                        <button class="btn btn-primary btn-sm" data-teacher="rizki-pratama">
+                                            <i class="fa fa-eye"></i> View Profile
+                                        </button>
+                                        <button class="btn btn-success btn-sm" data-teacher="rizki-pratama">
+                                            <i class="fa fa-phone"></i> Contact
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Teacher 6 -->
+                            <div class="col-md-4 col-sm-6 teacher-card" data-subject="cloud-computing" data-level="advanced" data-location="semarang">
+                                <div class="teacher-profile">
+                                    <div class="teacher-avatar">
+                                        <img src="img/h3.jpeg" alt="Teacher 6" class="img-responsive">
+                                        <div class="teacher-status away">
+                                            <i class="fa fa-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-info">
+                                        <h3>Maya Sari</h3>
+                                        <p class="teacher-title">Cloud Solutions Architect & DevOps Engineer</p>
+                                        <p class="teacher-specialty">Cloud Computing, DevOps, AWS, Azure</p>
+                                        <div class="teacher-rating">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <span class="rating-text">4.9 (88 reviews)</span>
+                                        </div>
+                                        <p class="teacher-location">
+                                            <i class="fa fa-map-marker"></i> Semarang
+                                        </p>
+                                        <p class="teacher-experience">
+                                            <i class="fa fa-briefcase"></i> 9+ years experience
+                                        </p>
+                                        <div class="teacher-skills">
+                                            <span class="skill-tag">AWS</span>
+                                            <span class="skill-tag">Azure</span>
+                                            <span class="skill-tag">Docker</span>
+                                            <span class="skill-tag">Kubernetes</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-actions">
+                                        <button class="btn btn-primary btn-sm" data-teacher="maya-sari">
+                                            <i class="fa fa-eye"></i> View Profile
+                                        </button>
+                                        <button class="btn btn-success btn-sm" data-teacher="maya-sari">
+                                            <i class="fa fa-phone"></i> Contact
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Load More Button -->
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg" id="loadMoreTeachers">
+                                <i class="fa fa-plus"></i> Load More Teachers
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics -->
+            <section class="teacher-stats">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Our Community</h2>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="stat-box">
+                                    <h3>1,200+</h3>
+                                    <p>Registered Teachers</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="stat-box">
+                                    <h3>50+</h3>
+                                    <p>Specializations</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="stat-box">
+                                    <h3>25+</h3>
+                                    <p>Cities Covered</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="stat-box">
+                                    <h3>4.8/5</h3>
+                                    <p>Average Rating</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="dataguru-cta">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2>Ready to Find Your Perfect Teacher?</h2>
+                        <p>Browse our extensive database of qualified educators and start your learning journey today.</p>
+                        <div class="cta-buttons">
+                            <a href="#teacherSearchForm" class="btn btn-primary btn-lg">
+                                <i class="fa fa-search"></i> Search Teachers
+                            </a>
+                            <a href="contact.html" class="btn btn-outline btn-lg">
+                                <i class="fa fa-phone"></i> Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>Alpha Edge</h4>
+                    <p class="text">Perusahaan teknologi yang memberikan solusi terdepan dan inovatif, memberi kesan modern dan profesional untuk mendukung transformasi digital bisnis Anda.</p>
+                    <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/AlphaEdgeTechnology"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://x.com/AlphaEdgeTech"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/alpha-edge-technology"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>SERVICES</h4>
+                    <ul class="big">
+                        <li><a href="service.html">Software Development</a></li>
+                        <li><a href="service.html">Cloud & IT Solutions</a></li>
+                        <li><a href="service.html">AI & Data Analytics</a></li>
+                        <li><a href="service.html">UI/UX & Design</a></li>
+                        <li><a href="service.html">Cybersecurity</a></li>
+                        <li><a href="service.html">Training & Support</a></li>
+                        <li><a href="service.html">Digital Marketing Tech</a></li>
+                        <li><a href="service.html">Internet of Things (IoT)</a></li>
+                        <li><a href="service.html">Consulting & Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>COMPANY</h4>
+                    <ul class="big">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="page.html">Technology Insights</a></li>
+                        <li><a href="category.html">Case Studies</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="donors.html">Donors Program</a></li>
+                        <li><a href="dataguru.html">Teacher Database</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>Contact Info</h4>
+                    <p class="text">Hubungi kami untuk konsultasi teknologi dan solusi digital.</p>
+                    <p><i class="fa fa-phone"></i> +62821-6374-1958</p>
+                    <p><i class="fa fa-envelope"></i> alphaedge13@gmail.com</p>
+                    <p><i class="fa fa-whatsapp"></i> +62821-6374-1958</p>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>&copy; 2025 Alpha Edge. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dataguru.js"></script>
+</body>
+</html>
